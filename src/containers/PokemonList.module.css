@@ -1,0 +1,49 @@
+.PokemonList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  width: 80%;
+  border: 1px solid rgb(92, 92, 92);
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px #eee, 0 0 10px #8a8a8a;
+  color: #8a8a8a;
+  text-transform: capitalize;
+  text-shadow: 0 0 30px #8a8a8a, 0 0 20px #eee;
+  color: #eee;
+  /* overflow: scroll; */
+  background-image: url("../assets/pokeball.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 80%;
+  background-position-y: 4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.SearchInput {
+  margin: 1.5rem auto;
+  width: 75%;
+  height: 2.3rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: inherit;
+  box-shadow: inset 0 0 5px #eee;
+  color: #eee;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.PokemonGrid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 650px) {
+  .SearchInput {
+    width: 395px;
+  }
+}
