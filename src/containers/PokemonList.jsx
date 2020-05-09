@@ -13,7 +13,7 @@ function PokemonList() {
 
   useEffect(() => {
     const save = [...cache]
-    const result = save.filter((p) => p.name.includes(name))
+    const result = save.filter((p) => p.name.includes(name.toLowerCase()))
     setPokemon(result)
   }, [name, cache, setPokemon])
 
